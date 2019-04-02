@@ -54,7 +54,7 @@ NSString *__iCloudsDriveDocumentsPath = nil;
 {
   if (__iCloudsDriveDocumentsPath == nil) {
     NSFileManager *fm = [NSFileManager defaultManager];
-    NSString *path = [[fm URLForUbiquityContainerIdentifier:@"iCloud.com.carloscabanero.blinkshell"] URLByAppendingPathComponent:@"Documents"].path;
+    NSString *path = [[fm URLForUbiquityContainerIdentifier:@"iCloud.com.teddyku.BlinkShell"] URLByAppendingPathComponent:@"Documents"].path;
     BOOL isDir = NO;
     if (![fm fileExistsAtPath:path isDirectory:&isDir]) {
       NSError *error = nil;
